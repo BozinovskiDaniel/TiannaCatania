@@ -55,28 +55,6 @@
     position: relative;
 }
 
-.header .my-navbar {
-    background: rgba(0,0,0,0) !important;
-}
-
-.nav-link {
-    color: #F5F5F5;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-    right: 100px;
-    top: 20px;
-}
-
-.navbar-brand {
-    color: #F5F5F5;
-    font-weight: bold;
-    font-size: 30px;
-    position: relative;
-    left: 40px;
-    top: 20px;
-}
-
 .box .centerh1 {
     position: relative;
     text-align: center;
@@ -85,6 +63,34 @@
     
 }
 
+.bg-dark {
+    transition: 500ms ease;
+    background: transparent !important;
+}
+
+.bg-dark.scrolled {
+    background: rgb(206, 203, 203) !important;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    right: 100px;
+    top: 5px;
+}
+
+.navbar-brand {
+    color: #F5F5F5;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    left: 40px;
+    top: 5px;
+}
+
 .navbar-nav {
     position: relative;
 }
+
