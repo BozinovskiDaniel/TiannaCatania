@@ -137,7 +137,7 @@ button:focus {
 }
 
 .text-custom{
-    color: #e65f78 !important;
+    color: #9b0808 !important;
 }
 
 .h-100vh{
@@ -169,8 +169,8 @@ button:focus {
 }
 
 .btn-custom{
-    border:1px solid #e65f78;
-    background-color: #e65f78;
+    border:1px solid ce0000;
+    background-color: #9b0808;
 }
 
 .btn-round {
@@ -187,8 +187,8 @@ button:focus {
 .btn-custom:hover,
 .open > .dropdown-toggle.btn-custom {
     color: #f3f3f3;
-    background-color: #d8576f;
-    border-color: #d8576f;
+    background-color: ce0000;
+    border-color: ce0000;
 }
 
 .btn-outline-custom {
@@ -210,7 +210,7 @@ button:focus {
 }
 
 .bg-overlay {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.65);
     position: absolute;
     top: 0;
     right: 0;
@@ -280,7 +280,7 @@ button:focus {
 .custom-nav.stickyadd .navbar-nav li a:hover,
 .custom-nav.stickyadd .navbar-nav li a:active,
 .custom-nav.stickyadd .navbar-nav li.active a {
-    color: #e65f78 !important;
+    color: #9b0808 !important;
 }
 
 .custom-nav.stickyadd {
@@ -348,8 +348,8 @@ button:focus {
 }
 
 .about-social li a:hover {
-    color: #e65f78;
-    border-color: #e65f78;
+    color: #9b0808;
+    border-color: #9b0808;
 }
 
 /*===========================
@@ -368,7 +368,7 @@ button:focus {
     height: 2px;
     width: 40px;
     margin: 15px auto;
-    background: #e65f78;
+    background: #9b0808;
     transition: all 0.5s;
 }
 
@@ -429,7 +429,7 @@ button:focus {
     -moz-border-radius: 20px;
     border-radius: 20px;
     transition: all 0.5s;
-    background: #e65f78;
+    background: #9b0808;
 }
 
 .owl-theme .owl-controls .owl-page.active span {
@@ -454,7 +454,7 @@ button:focus {
 
 .work_menu a.active,
 .work_menu a:hover {
-    background-color: #e65f78;
+    background-color: #9b0808;
     color: #fff !important;
 }
 
@@ -536,7 +536,7 @@ button:focus {
 }
 
 .form-kerri .form-control:focus {
-    border-color: #e65f78;
+    border-color: #9b0808;
 }
 
 .form-kerri textarea.form-control {
@@ -640,4 +640,8 @@ button:focus {
     .header-name{
         font-size:38px;
     }
+}
+
+#carouselExampleIndicators {
+    padding-top: 50px;
 }
