@@ -273,7 +273,7 @@ html {
 
 .aboutmepage {
   background-color: rgba(0,0,0,0.025);
-  height: 70vh;
+  height: 85vh;
   width: 100%;
   overflow: hidden;
 
@@ -429,6 +429,7 @@ html {
         transition: transform .5s ease;
 
         &:hover {
+          cursor: pointer;
           transform: scale(1.2);
         }
       }

@@ -240,7 +240,7 @@ html {
 
 .aboutmepage {
   background-color: rgba(0, 0, 0, 0.025);
-  height: 70vh;
+  height: 85vh;
   width: 100%;
   overflow: hidden;
 }
@@ -403,6 +403,7 @@ html {
 }
 
 .blogpage .blogcontent .img-hover-zoom img:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
