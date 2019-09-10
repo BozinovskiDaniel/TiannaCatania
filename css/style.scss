@@ -67,7 +67,7 @@ body {
 
   .navlinks {
     text-align: left;
-    padding: 0 1em 0 0.5em;
+    padding: 1em 1em 0 0.5em;
     color: #777;
     letter-spacing: 0.3em;
     height: 65%;
@@ -264,13 +264,14 @@ body {
 
 .aboutmepage {
   background-color: rgba(0,0,0,0.025);
-  height: 85vh;
+  height: 95vh;
   width: 100%;
   overflow: hidden;
 
   .aboutmecontent {
-    padding: 5.5em 0.8em;
+    padding: 2.5em 0.8em;
     line-height: 1.8;
+
 
     img {
       padding-left: 0.2em;
@@ -299,14 +300,17 @@ body {
     }
 
     h5 {
+      display: inline;
+      padding-top: 20px;
       font-size: 1em;
       font-weight: bold;
       color: #222;
     }
 
     p {
-      font-size: 1em;
-      padding-bottom: 1.2em;
+      display: inline;
+      font-size: 0.7em;
+      padding-bottom: 2em;
     }
 
     .btn {
@@ -334,7 +338,7 @@ body {
 
   .skillssection {
     background-color: rgba(0,0,0,0.075);
-    height: 45vh;
+    height: 65vh;
     width: 100%;
     overflow: hidden;
 
@@ -345,7 +349,7 @@ body {
       @include h1-h3-stuff;
 
       p {
-        font-size: 0.95em;
+        font-size: 0.80em;
         padding-bottom: 0.1em;
       }
 
@@ -363,7 +367,7 @@ body {
 
 .blogpage {
   background-color: rgba(0,0,0,0.025);
-  height: 75vh;
+  height: 98vh;
   width: 100%;
   overflow: hidden;
 
@@ -385,7 +389,7 @@ body {
     }
 
     p {
-      font-size: 0.95em;
+      font-size: 0.80em;
       font-weight: 0;
     }
     
@@ -405,7 +409,7 @@ body {
 
 .expertisepage{
   background-color: rgba(0,0,0,0.075);
-  height: 50vh;
+  height: 65vh;
   width: 100%;
   overflow: hidden;
 
@@ -416,16 +420,23 @@ body {
     @include h1-h3-stuff;
 
     p {
-      font-size: 0.95em;
+      font-size: 0.75em;
       padding-bottom: 0.1em;
+    }
+    
+    .fa {
+      padding-bottom: 0.75em;
     }
 
     .classWithPad { 
       margin: 15px; 
-      padding: 85px; 
-      border: 1px solid black;
+      padding: 25px; 
+      border: 2px solid rgba(0,0,0,0.05);
     }
 
+    h2 {
+      font-size: 23px;
+    }
   }   
 
 }
@@ -441,7 +452,7 @@ body {
 
 .contactmepage {
   background-color: rgba(0,0,0,0.025);
-  height: 50vh;
+  height: 75vh;
   width: 100%;
   overflow: hidden;
 
@@ -452,7 +463,7 @@ body {
     @include h1-h3-stuff;
 
     p {
-      font-size: 0.95em;
+      font-size: 0.85em;
       padding-bottom: 0.1em;
     }
 
