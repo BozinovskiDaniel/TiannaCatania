@@ -403,11 +403,31 @@ body {
 
 // EXPERTISE SECTION --------------------------------------------------------------------------
 
-.expertisepage {
+.expertisepage{
   background-color: rgba(0,0,0,0.075);
-  height: 85vh;
+  height: 50vh;
   width: 100%;
   overflow: hidden;
+
+  .expertisecontent {
+    padding: 5.5em 0.8em;
+    line-height: 1.8;
+
+    @include h1-h3-stuff;
+
+    p {
+      font-size: 0.95em;
+      padding-bottom: 0.1em;
+    }
+
+    .classWithPad { 
+      margin: 15px; 
+      padding: 85px; 
+      border: 1px solid black;
+    }
+
+  }   
+
 }
 
 
@@ -420,19 +440,28 @@ body {
 // CONTACT ME SECTION --------------------------------------------------------------------------
 
 .contactmepage {
-  background-color: whitesmoke;
-  height: 85vh;
+  background-color: rgba(0,0,0,0.025);
+  height: 50vh;
   width: 100%;
   overflow: hidden;
+
+  .contactmecontent {
+    padding: 5.5em 1.2em;
+    line-height: 1.8;
+
+    @include h1-h3-stuff;
+
+    p {
+      font-size: 0.95em;
+      padding-bottom: 0.1em;
+    }
+
+  }   
+
 }
 
 
 // END OF CONTACT ME SECTION --------------------------------------------------------------------
-
-
-
-
-
 
 
 
