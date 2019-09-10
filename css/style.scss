@@ -264,7 +264,7 @@ body {
 
 .aboutmepage {
   background-color: rgba(0,0,0,0.025);
-  height: 95vh;
+  height: 85vh;
   width: 100%;
   overflow: hidden;
 
@@ -309,7 +309,7 @@ body {
 
     p {
       display: inline;
-      font-size: 0.7em;
+      font-size: 0.85em;
       padding-bottom: 2em;
     }
 
@@ -321,6 +321,11 @@ body {
 
     .buttons {
       padding: 1.2em 1.2em 0em 0em;
+    }
+
+    .inforow {
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
   }
