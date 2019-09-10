@@ -13,6 +13,22 @@ body {
   margin-left: 23vw; /* Same as the width of the sidebar */
 }
 
+@mixin h1-h3-stuff {
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 0.2em;
+    padding-bottom: 1em;
+    color: #222;
+    letter-spacing: 0.15em;
+  }
+
+  h3 {
+    font-size: 0.7em;
+    letter-spacing: 0.5em;
+    color: #222;
+  }
+}
 // SIDENAV SECTION --------------------------------------------------------------------------
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -34,10 +50,12 @@ body {
     text-align: center;
     padding: 2em 2em 3em 2em;
     height: 20%;
+    @include h1-h3-stuff;
 
     h1 {
       font-size: 2.5em;
       font-weight: bold;
+      padding-bottom: 0.5em;
     }
 
     h3 {
@@ -51,7 +69,7 @@ body {
     text-align: left;
     padding: 0 1em 0 0.5em;
     color: #777;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
     height: 65%;
 
     a {
@@ -244,13 +262,13 @@ body {
 // ABOUT ME SECTION --------------------------------------------------------------------------
 
 .aboutmepage {
-  background-color: rgb(248, 248, 248);
+  background-color: rgba(0,0,0,0.025);
   height: 85vh;
   width: 100%;
   overflow: hidden;
 
   .aboutmecontent {
-    padding: 3.5em 0.8em;
+    padding: 5.5em 0.8em;
     line-height: 1.8;
 
     img {
@@ -311,10 +329,37 @@ body {
 
 
 
+// SKILLS SECTION -----------------------------------------------------------------------------
+
+  .skillssection {
+    background-color: rgba(0,0,0,0.075);
+    height: 55vh;
+    width: 100%;
+    overflow: hidden;
+
+    .skillscontent {
+      padding: 5.5em 0.8em;
+      line-height: 1.8;
+
+      @include h1-h3-stuff;
+      p {
+        font-size: 0.95em;
+        padding-bottom: 1.2em;
+      }
+    }   
+
+}
+
+// END OFSKILLS SECTION -----------------------------------------------------------------------
+
+
+
+
+
 // BLOG PAGE SECTION --------------------------------------------------------------------------
 
 .blogpage {
-  background-color: whitesmoke;
+  background-color: black;
   height: 85vh;
   width: 100%;
   overflow: hidden;
