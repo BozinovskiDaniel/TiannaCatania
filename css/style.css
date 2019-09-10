@@ -9,7 +9,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* The sidebar menu */
+/* Style page content */
+.main {
+  margin-left: 23vw;
+  /* Same as the width of the sidebar */
+}
+
 .sidenav {
   height: 100%;
   /* Full-height: remove this if you want "auto" height */
@@ -22,33 +27,97 @@ body {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: #111;
-  /* Black */
+  background-color: #fff;
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 20px;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+.sidenav .content {
+  width: 100%;
+  height: 100%;
+}
+
+.sidenav .navbrand {
+  text-align: center;
+  padding: 2em 2em 3em 2em;
+  height: 20%;
+}
+
+.sidenav .navbrand h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.sidenav .navbrand h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #777;
+}
+
+.sidenav .navlinks {
+  text-align: left;
+  padding: 0 1em 0 0.5em;
+  color: #777;
+  letter-spacing: 0.4em;
+  height: 65%;
+}
+
+.sidenav .navlinks a {
+  padding: 1.1em 1.2em 1em 1.2em;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 1em;
+  color: #777;
   display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid  #eee;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav .navlinks a:after {
+  content: '';
 }
 
-/* Style page content */
-.main {
-  margin-left: 23vw;
-  /* Same as the width of the sidebar */
+.sidenav .navlinks a:hover {
+  color: #222;
+}
+
+.sidenav .navfooter {
+  text-align: center;
+  height: 15%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidenav .navfooter ul {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.sidenav .navfooter ul li {
+  display: inline-block;
+  padding: 1em 0.5em;
+  color: #222;
+}
+
+.sidenav .navfooter ul li:hover {
+  cursor: pointer;
+}
+
+.sidenav .navfooter p {
+  font-size: 0.8em;
 }
 
 .landingpage {
   background-image: url("../images/bg-img.jpg");
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -97,7 +166,130 @@ body {
   font-weight: bold;
 }
 
-.aboutme {
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 100px;
+  /*change with size of arrow to make sit on bottom */
+  color: white;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.aboutmepage {
+  background-color: #f8f8f8;
+  height: 85vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.aboutmepage .aboutmecontent {
+  padding: 3.5em 0.8em;
+  line-height: 1.8;
+}
+
+.aboutmepage .aboutmecontent img {
+  padding-left: 0.2em;
+}
+
+.aboutmepage .aboutmecontent h1 {
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 0.2em;
+  padding-bottom: 1em;
+  color: #222;
+  letter-spacing: 0.15em;
+}
+
+.aboutmepage .aboutmecontent h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.3em 0em 0.5em 0em;
+  color: #222;
+}
+
+.aboutmepage .aboutmecontent h3 {
+  font-size: 0.7em;
+  letter-spacing: 0.5em;
+  color: #222;
+}
+
+.aboutmepage .aboutmecontent h5 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #222;
+}
+
+.aboutmepage .aboutmecontent p {
+  font-size: 1em;
+  padding-bottom: 1.2em;
+}
+
+.aboutmepage .aboutmecontent .btn {
+  background-color: #222;
+  color: #eee;
+  border-radius: 0;
+}
+
+.aboutmepage .aboutmecontent .buttons {
+  padding: 1.2em 1.2em 0em 0em;
+}
+
+.blogpage {
+  background-color: whitesmoke;
+  height: 85vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.expertisepage {
+  background-color: whitesmoke;
+  height: 85vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contactmepage {
   background-color: whitesmoke;
   height: 85vh;
   width: 100%;
