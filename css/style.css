@@ -136,6 +136,20 @@ html {
   font-size: 0.8em;
 }
 
+.secondnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
 .landingpage {
   background-image: url("../images/bg-img.jpg");
   background-attachment: fixed;
@@ -311,7 +325,7 @@ html {
 
 .skillssection {
   background-color: rgba(0, 0, 0, 0.075);
-  height: 45vh;
+  height: 55vh;
   width: 100%;
   overflow: hidden;
 }
@@ -446,7 +460,7 @@ html {
 
 .expertisepage .expertisecontent .classWithPad {
   margin: 15px;
-  padding: 75px;
+  padding: 45px;
   border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -456,7 +470,7 @@ html {
 
 .contactmepage {
   background-color: rgba(0, 0, 0, 0.025);
-  height: 65vh;
+  height: 75vh;
   width: 100%;
   overflow: hidden;
 }
@@ -482,7 +496,7 @@ html {
 }
 
 .contactmepage .contactmecontent h2 {
-  font-size: 20spx;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -531,6 +545,152 @@ html {
   }
   .sidenav a {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidenav .navbrand h1 {
+    font-size: 95%;
+  }
+  .sidenav .navbrand h3 {
+    font-size: 55%;
+  }
+  .sidenav .navlinks a {
+    font-size: 50%;
+  }
+  .landingpage .lpcontent h1 {
+    font-size: 50px;
+  }
+  .landingpage .lpcontent p {
+    font-size: 20px;
+  }
+  .aboutmepage .aboutmecontent {
+    line-height: 1.4;
+  }
+  .aboutmepage .aboutmecontent h1 {
+    font-size: 90%;
+  }
+  .aboutmepage .aboutmecontent h3 {
+    font-size: 50%;
+  }
+  .aboutmepage .aboutmecontent h5 {
+    font-size: 70%;
+  }
+  .aboutmepage .aboutmecontent p {
+    font-size: 70%;
+  }
+  .skillssection .skillscontent {
+    padding-top: 40px;
+    line-height: 1.4;
+  }
+  .skillssection .skillscontent h1 {
+    font-size: 90%;
+  }
+  .skillssection .skillscontent h3 {
+    font-size: 50%;
+  }
+  .skillssection .skillscontent p {
+    font-size: 70%;
+  }
+  .skillssection .skillscontent .bars p {
+    font-size: 75%;
+  }
+  .expertisepage .expertisecontent {
+    padding: 40px 10px 0px 10px;
+    line-height: 1.2;
+  }
+  .expertisepage .expertisecontent h1 {
+    font-size: 95%;
+  }
+  .expertisepage .expertisecontent h3 {
+    font-size: 60%;
+  }
+  .expertisepage .expertisecontent p {
+    font-size: 70%;
+  }
+  .expertisepage .expertisecontent h2 {
+    font-size: 100%;
+  }
+  .expertisepage .expertisecontent .classWithPad {
+    padding: 20px;
+  }
+  .contactmepage .contactmecontent {
+    padding: 40px 10px 0px 10px;
+    line-height: 1.2;
+  }
+  .contactmepage .contactmecontent h1 {
+    font-size: 95%;
+  }
+  .contactmepage .contactmecontent h3 {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blogpage {
+    height: 600px;
+  }
+  .blogpage .blogcontent {
+    line-height: 1.2;
+    padding: 20px;
+  }
+  .blogpage .blogcontent h1 {
+    font-size: 95%;
+  }
+  .blogpage .blogcontent h3 {
+    font-size: 60%;
+  }
+  .blogpage .blogcontent h5 {
+    font-size: 85%;
+  }
+  .blogpage .blogcontent h6 {
+    font-size: 8px;
+  }
+  .blogpage .blogcontent p {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .skillssection {
+    height: 75vh;
+  }
+  .blogpage {
+    height: 1500px;
+  }
+  .expertisepage {
+    height: 700px;
+  }
+  .contactmepage {
+    height: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidenav {
+    width: 0vw;
+  }
+  .main {
+    margin-left: 0vw;
+  }
+  .aboutmepage .aboutmecontent {
+    line-height: 1.4;
+  }
+  .aboutmepage .aboutmecontent h1 {
+    font-size: 22px;
+  }
+  .aboutmepage .aboutmecontent h2 {
+    font-size: 22px;
+  }
+  .aboutmepage .aboutmecontent h3 {
+    font-size: 8px;
+  }
+  .aboutmepage .aboutmecontent h5 {
+    font-size: 14px;
+    padding: 0;
+  }
+  .aboutmepage .aboutmecontent p {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -131,11 +131,20 @@ html {
     }
   }
 
-
 }
 
 // END OF SIDENAV SECTION --------------------------------------------------------------------------
 
+.secondnav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 40px;
+  padding-top: 20px;
+
+  
+  
+}
 
 
 
@@ -356,7 +365,7 @@ html {
 
   .skillssection {
     background-color: rgba(0,0,0,0.075);
-    height: 45vh;
+    height: 55vh;
     width: 100%;
     overflow: hidden;
 
@@ -385,7 +394,7 @@ html {
 
 }
 
-// END OFSKILLS SECTION -----------------------------------------------------------------------
+// END OF SKILLS SECTION -----------------------------------------------------------------------
 
 
 
@@ -473,7 +482,7 @@ html {
 
     .classWithPad { 
       margin: 15px; 
-      padding: 75px; 
+      padding: 45px; 
       border: 2px solid rgba(0,0,0,0.05);
     }
 
@@ -495,7 +504,7 @@ html {
 
 .contactmepage {
   background-color: rgba(0,0,0,0.025);
-  height: 65vh;
+  height: 75vh;
   width: 100%;
   overflow: hidden;
 
@@ -506,7 +515,7 @@ html {
     @include h1-h3-stuff;
 
     h2 {
-      font-size: 20spx;
+      font-size: 25px;
       font-weight: bold;
     } 
 
@@ -569,4 +578,130 @@ html {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@media(max-width: 1000px) {
+  .sidenav {
+    .navbrand {
+      h1 {font-size: 95%;}
+      h3 {font-size: 55%;}
+    }
+    .navlinks {
+      a {
+        font-size: 50%;
+      }
+    }
+  }
+
+  .landingpage {
+    .lpcontent {
+      h1 {font-size: 50px;}
+      p {font-size: 20px;}
+    }
+  }
+
+  .aboutmepage {
+    .aboutmecontent {
+      line-height: 1.4;
+      h1 {font-size: 90%;}
+      h3 {font-size: 50%;}
+      h5 {font-size: 70%;}
+      p {font-size: 70%;}
+    }
+
+  }
+
+  .skillssection {
+    .skillscontent {
+      padding-top: 40px;
+      line-height: 1.4;
+      h1 {font-size: 90%;}
+      h3 {font-size: 50%;}
+      p {font-size: 70%;}
+
+      .bars {
+        p {font-size: 75%;}
+      }
+    }
+  }
+
+  .expertisepage {
+    .expertisecontent {
+      padding: 40px 10px 0px 10px;
+      line-height: 1.2;
+      h1 {font-size: 95%;}
+      h3 {font-size: 60%;}
+      p {font-size: 70%;}
+      h2 {font-size: 100%;}
+      .classWithPad {
+        padding: 20px;
+      }
+    }
+  }
+
+  .contactmepage {
+    .contactmecontent {
+      padding: 40px 10px 0px 10px;
+      line-height: 1.2;
+      h1 {font-size: 95%;}
+      h3 {font-size: 60%;}
+    }
+  }
+
+}
+
+@media(max-width: 1200px) {
+  .blogpage {
+    height: 600px;
+    .blogcontent {
+      line-height: 1.2;
+      padding: 20px;
+      h1 {font-size: 95%;}
+      h3 {font-size: 60%;}
+      h5 {font-size: 85%}
+      h6 {font-size: 8px;}
+      p {font-size: 50%;}
+    }
+  }
+}
+
+
+@media(max-width: 767px) {
+  .skillssection {
+    height: 75vh;
+  }
+
+  .blogpage {
+    height: 1500px;
+  }
+
+  .expertisepage {
+    height: 700px;
+  }
+
+  .contactmepage {
+    height: 700px;
+  }
+}
+
+@media(max-width: 700px) {
+
+  .sidenav {width: 0vw;}
+
+  .main {margin-left: 0vw;}
+
+  .aboutmepage {
+    .aboutmecontent {
+      line-height: 1.4;
+      h1 {font-size: 22px;}
+      h2 {font-size: 22px;}
+      h3 {font-size: 8px;}
+      h5 {
+        font-size: 14px;
+        padding: 0;}
+      p {font-size: 12px;}
+    }
+  }
+
+  
 }
