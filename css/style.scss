@@ -13,6 +13,10 @@ body {
   margin-left: 23vw; /* Same as the width of the sidebar */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @mixin h1-h3-stuff {
   h1 {
     font-size: 2em;
@@ -72,6 +76,8 @@ body {
     letter-spacing: 0.3em;
     height: 65%;
 
+    
+
     a {
       padding: 1.1em 1.2em 1em 1.2em;
       text-decoration: none;
@@ -82,6 +88,8 @@ body {
       font-weight: bold;
       text-transform: uppercase;
       border-bottom: 2px solid  #eee;
+
+      
       
       &:after {
         content: '';
@@ -89,7 +97,7 @@ body {
       }
   
       &:hover {
-        color: #222;
+        color:#38575C;
       }
     }
   }
@@ -113,6 +121,7 @@ body {
 
         &:hover {
           cursor: pointer;
+          color:#38575C;
         }
       }
     }
@@ -317,6 +326,10 @@ body {
       background-color: #222;
       color: #eee;
       border-radius: 0;
+
+      &:hover {
+        background-color:#38575C;
+      }
     }
 
     .buttons {
@@ -343,7 +356,7 @@ body {
 
   .skillssection {
     background-color: rgba(0,0,0,0.075);
-    height: 65vh;
+    height: 45vh;
     width: 100%;
     overflow: hidden;
 
@@ -353,11 +366,21 @@ body {
 
       @include h1-h3-stuff;
 
+
+
       p {
         font-size: 0.80em;
         padding-bottom: 0.1em;
       }
 
+
+      .bars {
+        p {
+          font-size: 1em;
+          padding-top: 1em;
+          padding-bottom: 0;
+        }
+      }
     }   
 
 }
@@ -372,7 +395,7 @@ body {
 
 .blogpage {
   background-color: rgba(0,0,0,0.025);
-  height: 98vh;
+  height: 80vh;
   width: 100%;
   overflow: hidden;
 
@@ -397,7 +420,22 @@ body {
       font-size: 0.80em;
       font-weight: 0;
     }
-    
+
+    .img-hover-zoom {
+      height: 300px;
+      overflow: hidden;
+
+      img {
+        transition: transform .5s ease;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+      }
+
+    }
+
   }
 
     
@@ -414,7 +452,7 @@ body {
 
 .expertisepage{
   background-color: rgba(0,0,0,0.075);
-  height: 65vh;
+  height: 60vh;
   width: 100%;
   overflow: hidden;
 
@@ -435,7 +473,7 @@ body {
 
     .classWithPad { 
       margin: 15px; 
-      padding: 25px; 
+      padding: 75px; 
       border: 2px solid rgba(0,0,0,0.05);
     }
 
@@ -457,7 +495,7 @@ body {
 
 .contactmepage {
   background-color: rgba(0,0,0,0.025);
-  height: 75vh;
+  height: 65vh;
   width: 100%;
   overflow: hidden;
 
@@ -467,9 +505,33 @@ body {
 
     @include h1-h3-stuff;
 
+    h2 {
+      font-size: 20spx;
+      font-weight: bold;
+    } 
+
     p {
       font-size: 0.85em;
       padding-bottom: 0.1em;
+    }
+
+    .btn {
+      background-color: #222;
+      color: #eee;
+      border-radius: 0;
+      font-size: 15px;
+
+      &:hover {
+        background-color:#38575C;
+      }
+    }
+
+    .buttons {
+      padding-top: 10px;
+    }
+    
+    .row {
+      padding: 10px;
     }
 
   }   
@@ -479,6 +541,28 @@ body {
 
 // END OF CONTACT ME SECTION --------------------------------------------------------------------
 
+
+
+
+
+// FOOTER SECTION --------------------------------------------------------------------------
+
+#footer {
+  background-color: #111;
+  height: 15vh;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+
+  .col-md-4 {
+    top: 50%;
+  }
+}
+
+
+// END OF FOOTER SECTION --------------------------------------------------------------------
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
